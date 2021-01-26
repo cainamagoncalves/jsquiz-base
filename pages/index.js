@@ -31,7 +31,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>Alura Quiz - projeto base</title>
-        <meta property="og:image" content={db.bg}></meta>
+        <meta property="og:image" content="https://refresh-digital.com/wp-content/uploads/2020/04/Javascript-History-Image.jpg"></meta>
       </Head>
       <QuizContainer>
         <Widget>
