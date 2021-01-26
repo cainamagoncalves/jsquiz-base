@@ -4,6 +4,7 @@ import Widget from '../source/components/Widget'
 import QuizBackground from '../source/components/QuizBackground'
 import Footer from '../source/components/Footer'
 import GitHubCorner from '../source/components/GitHubCorner'
+import Head from 'next/head'
 
 
 const BackgroundImage = styled.div`
@@ -28,6 +29,10 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Alura Quiz - projeto base</title>
+        <meta property="og:image" content={db.bg}></meta>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
