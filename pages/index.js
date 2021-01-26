@@ -28,6 +28,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <meta property="og:image:type" content={db.bg} />
       <QuizContainer>
         <Widget>
           <Widget.Header>
