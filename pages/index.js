@@ -1,22 +1,16 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../source/components/Widget'
-import QuizBackground from '../source/components/QuizBackground'
-import Footer from '../source/components/Footer'
-import GitHubCorner from '../source/components/GitHubCorner'
-import Head from 'next/head'
-
-
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`;
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import db from '../db.json';
+import Widget from '../source/components/Widget';
+import QuizBackground from '../source/components/QuizBackground';
+import Footer from '../source/components/Footer';
+import GitHubCorner from '../source/components/GitHubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   padding-top: 45px;
   margin: auto 10%;
   @media screen and (max-width: 500px) {
@@ -25,13 +19,15 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Alura Quiz - projeto base</title>
-        <meta property="og:image" content="https://refresh-digital.com/wp-content/uploads/2020/04/Javascript-History-Image.jpg"></meta>
+        <title>JsQuiz</title>
+        <meta property="og:image" content="https://refresh-digital.com/wp-content/uploads/2020/04/Javascript-History-Image.jpg" />
       </Head>
       <QuizContainer>
         <Widget>
@@ -39,11 +35,28 @@ export default function Home() {
             <h1> The Javascript </h1>
           </Widget.Header>
           <Widget.Content>
+            <form onSubmit={function (e) {
+              e.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo submissão por meio do React');
 
-            <p> lorem ipsum dolor sit amet...</p>
+              // router manda para próxima página
+            }}
+            >
+
+              <input
+                onChange={function (e) {
+                  setName(e.target.value);
+                }}
+                placeholder="Diz aí seu nome..."
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+              </button>
+            </form>
+
           </Widget.Content>
         </Widget>
-
 
         <Widget>
           <Widget.Content>
@@ -55,7 +68,7 @@ export default function Home() {
         </Widget>
         <Footer />
         <GitHubCorner projectUrl="https://github.com/cainamagoncalves" />
-      </QuizContainer >
-    </QuizBackground >
-  )
+      </QuizContainer>
+    </QuizBackground>
+  );
 }
