@@ -18,7 +18,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>JsQuiz</title>
-        <meta property="og:image" content="https://www.jstips.co/assets/images/jstips-animation.gif" />
+        <meta property="og:video" content="https://www.jstips.co/assets/images/jstips-animation.gif" />
       </Head>
       <QuizContainer>
         <Widget>
