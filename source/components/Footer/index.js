@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import React from 'react';
 
-// src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
+  background-color: #515c6c;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@ const FooterWrapper = styled.footer`
     transition: .3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: .8;
     }
     span {
       text-decoration: underline;

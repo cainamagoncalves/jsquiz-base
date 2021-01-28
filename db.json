@@ -1,28 +1,30 @@
 {
-    "bg": "https://refresh-digital.com/wp-content/uploads/2020/04/Javascript-History-Image.jpg",
+    "bg": "https://www.jstips.co/assets/images/jstips-animation.gif",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://freefrontend.com/assets/img/anime-js-examples/Preloader-with-Anime-js.gif",
+        "title": "Qual método utilizar para retornar a soma de todos os elementos de um array?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "map",
+          "reduce",
+          "sort",
+          "forEach"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://1.bp.blogspot.com/-vDG6dJWq0wc/WcjI0MrgL1I/AAAAAAABCKQ/unZdhGHKSc4lGqfSDdNsffZ2H-TFpBVYQCLcBGAs/s1600/s-1010.gif",
+        "title": "Como retornar a propriedade 'nome' de um objeto, dentro de um array, utilizando for em Javascript",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "i.nome",
+           "nome.arr[i]",
+           "arr[i].nome",
+           "arr.nome[i]"
         ]
       }
     ],
