@@ -19,7 +19,7 @@
         "image": "https://1.bp.blogspot.com/-vDG6dJWq0wc/WcjI0MrgL1I/AAAAAAABCKQ/unZdhGHKSc4lGqfSDdNsffZ2H-TFpBVYQCLcBGAs/s1600/s-1010.gif",
         "title": "Como retornar a propriedade 'nome' de um objeto, dentro de um array, utilizando for em Javascript",
         "description": "Faz tempo em haha",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
            "i.nome",
            "nome.arr[i]",
