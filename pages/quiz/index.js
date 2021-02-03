@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../source/components/Widget';
-import QuizBackground from '../source/components/QuizBackground';
-import QuizContainer from '../source/components/QuizContainer';
-import Button from '../source/components/Button';
-import AlternativeForm from '../source/components/AlternativeForm';
+import db from '../../db.json';
+import Widget from '../../source/components/Widget';
+import QuizBackground from '../../source/components/QuizBackground';
+import QuizContainer from '../../source/components/QuizContainer';
+import Button from '../../source/components/Button';
+import AlternativeForm from '../../source/components/AlternativeForm';
 
 function ResultWidget({ results }) {
   return (
